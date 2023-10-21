@@ -77,11 +77,10 @@
                     </div>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" onclick="validateForm()">Submit</button>
             <button type="button" class="btn btn-secondary"><a href="index.html">Back</a></button>
         </form>
     </div>
-
     <script>
         function validateForm() {
             var firstName = document.getElementById("firstName").value;
@@ -93,46 +92,55 @@
             var dob = document.getElementById("dob").value;
             var password = document.getElementById("password").value;
             var confirmPassword = document.getElementById("confirmPassword").value;
-
-            if (firstName === "" || lastName === "" || userName === "" || email === "" || mobileNumber === "" || gender === "" || dob === "" || password === "" || confirmPassword === "") {
-                alert("All fields are required. Please fill out all the fields.");
+        
+            // Validate first name and last name: Only allow letters
+            var namePattern = /^[A-Za-z]+$/;
+            if (!namePattern.test(firstName) || !namePattern.test(lastName)) {
+                alert("First name and last name should only contain letters.");
                 return false;
             }
-
+        
+            // Validate email: Check if it's a valid email address
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            if (!emailPattern.test(email)) {
+                alert("Invalid email address.");
+                return false;
+            }
+        
+            // Validate mobile number: Check for a 10-digit number starting with 9, 8, 7, or 6
+            var mobilePattern = /^[6-9]\d{9}$/;
+            if (!mobilePattern.test(mobileNumber)) {
+                alert("Invalid mobile number. It should be 10 digits and start with 9, 8, 7, or 6.");
+                return false;
+            }
+        
+            // Validate password and confirm password
             if (password !== confirmPassword) {
-                alert("Passwords do not match. Please make sure the password and confirm password match.");
+                alert("Password and confirm password do not match.");
                 return false;
             }
-
+        
             return true;
         }
-
+        
         function togglePassword() {
-            var passwordInput = document.getElementById("password");
-            var passwordToggle = document.getElementById("passwordToggle");
-            if (passwordInput.type === "password") {
-                passwordInput.type = "text";
-                passwordToggle.className = "fa fa-eye-slash";
+            var passwordField = document.getElementById("password");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
             } else {
-                passwordInput.type = "password";
-                passwordToggle.className = "fa fa-eye";
+                passwordField.type = "password";
             }
         }
-
+        
         function toggleConfirmPassword() {
-            var confirmPasswordInput = document.getElementById("confirmPassword");
-            var confirmPasswordToggle = document.getElementById("confirmPasswordToggle");
-            if (confirmPasswordInput.type === "password") {
-                confirmPasswordInput.type = "text";
-                confirmPasswordToggle.className = "fa fa-eye-slash";
+            var confirmPasswordField = document.getElementById("confirmPassword");
+            if (confirmPasswordField.type === "password") {
+                confirmPasswordField.type = "text";
             } else {
-                confirmPasswordInput.type = "password";
-                confirmPasswordToggle.className = "fa fa-eye";
+                confirmPasswordField.type = "password";
             }
         }
-    </script>
-
-
-   
+        </script>
+        
 </body>
 </html>
