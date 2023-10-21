@@ -28,7 +28,7 @@
 
 
         footer {
-            padding: 20px 0; 
+            padding: 40px ; 
         }
 
         
@@ -56,3 +56,61 @@
         .col-md-4 textarea {
             margin-bottom: 10px; 
         }
+/* nav bar styeling  start */
+#searchbar
+{
+    border: 2px solid gold;
+}
+#searchbar::placeholder
+{
+    font-family: Georgia, 'Times New Roman', Times, serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;
+}
+#searchbtn
+{
+    background-color:transparent;
+    border: 2px gold solid;
+    /* border-style: none; */
+    padding-left: 5px;
+    border-top-right-radius:8px ;
+    border-bottom-right-radius:8px ;
+}
+/* logo */
+#logo
+{
+    font-size: 24px;
+    font-weight: 500px;
+    color: #272727;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#logo sub{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+}
+#review
+{
+    text-decoration: none;
+    color: #272727;
+    font-weight: 500;
+}
+    
+/* logo end */
+/* menu */
+nav
+{
+    background-color: white;
+}
+#menu div div ul li a 
+{
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #272727;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+/* nav bar styeling enddd */
