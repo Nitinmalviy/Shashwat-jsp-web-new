@@ -12,18 +12,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/style.css">
-    <title>Responsive Header</title>
-    <style>
-    </style>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/myprofile.css">
+    <title>MyProfile</title>    
 </head>
 <body>
-  <header class="sticky">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
+    <header class="sticky">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
             <a class="navbar-brand" href="#">
                 <!-- Your Logo Here -->
-               <a href="../userHomepages/home.html" id="logo">Shashwat <sub>Never stop learning</sub></a>
+               <a href="home.html" id="logo">Shashwat <sub>Never stop learning</sub></a>
             </a>
             <!-- Add data-toggle and data-target attributes for the button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -39,59 +39,83 @@
                 <a href="#" id="review">Review and Rating</a>
             </div>
         </div>
-    </nav>
-</header>
-
-  <header>
-    <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <!-- Add the collapse navbar-collapse class and id -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto w-100">
-                    
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link " data-bs-toggle="offcanvas" data-bs-target="#offCanvasMenu"  href="#" ><i class="fa fa-book"></i> My Book</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><i class="fa fa-list-alt"></i> Category</a>
-                  </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="blog.html"><i class="fa fa-book"></i> Blog</a>
-                  </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-microphone"></i> Podcast</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-headphones"></i> Audio Books</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-graduation-cap"></i> Tutorials</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="offcanvas" 
-                        data-bs-target="#offcanvasRight" 
-                        aria-controls="offcanvasRight"
-                        ><i class="fa fa-user"></i>Login</a>
-                    </li>
-                    <!-- Add your other menu items here -->
-                </ul>
+        </nav>
+    </header>
+    
+      <header>
+        <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <!-- Add the collapse navbar-collapse class and id -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto w-100">
+                        
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../userHomepages/home.html"fa fa-home"></i> Home</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link " data-bs-toggle="offcanvas" data-bs-target="#offCanvasMenu"  href="#" ><i class="fa fa-book"></i> My Book</a>
+                        </li>
+    
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><i class="fa fa-list-alt"></i> Category</a>
+                      </li>
+    
+                        <li class="nav-item">
+                          <a class="nav-link" href="../userHomepages/blog.html"><i class="fa fa-book"></i> Blog</a>
+                      </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="../userHomepages/podcast.html"><i class="fa fa-microphone"></i> Podcast</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="../userHomepages/audiobook.html"><i class="fa fa-headphones"></i>Audio Books</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="../userHomepages/tutorial.html"><i class="fa fa-graduation-cap"></i> Tutorials</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#offcanvasRight" data-bs-toggle="offcanvas" 
+                            data-bs-target="#offcanvasRight" 
+                            aria-controls="offcanvasRight"
+                            ><i class="fa fa-user"></i>Profile</a>
+                        </li>
+                        <!-- Add your other menu items here -->
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
+<div class="container-fluid mt-4">
+    
+            <!-- Profile Container -->
+            <div class="profile-container mx-auto">
+                <div id="profilediv">
+                    <!-- Profile Picture -->
+                   <center> <img src="../img/7309681.jpg" alt="Profile Picture" class="img-fluid rounded-circle profile-image"></center>
+                    <!-- Right-side settings icon and menu -->
+                </div>
+                
+                <div class="text-center">
+                    <!-- Profile Information (Centered Text) -->
+                    <h2>Name: Mohan Maali</h2>
+                    <p >Email:nitinmalviya172@gmail.com</p>
+                    <p >Location: Indore , India</p>
+                    <p>Bio: A Assosiate software engeenire.</p>
+                </div>
+ 
+            </div>
+
+</div>
+
+<!-- ... Your existing footer ... -->
 
 
-  <footer class="bg-dark text-light">
+
+  <footer class="bg-dark text-light footer">
     <div class="container">
         <div class="row">
             <!-- Quick Links Section -->
@@ -152,9 +176,9 @@
             </div> 
             <center>
               <div class="offcanvas-body"> 
-                <h5><a href="#myprofile">My Profile</a></h5> 
-                <h5><a href="">Setting</a></h5> 
-                <h5><a href="">My Blogs</a></h5> 
+                <h5><a href="myprofile">My Profile</a></h5> 
+                <h5><a href="setting.html">Setting</a></h5> 
+                <h5><a href="myblog.html">My Blogs</a></h5> 
             </div>
             </center> 
         </div> 

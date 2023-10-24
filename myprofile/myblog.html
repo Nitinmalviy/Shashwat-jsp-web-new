@@ -12,435 +12,111 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/myblog.css">
     <title>Responsive Header</title>
     <style>
-    </style>
+      
+  </style>
 </head>
 <body>
-  <header class="sticky">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-            <!-- Your Logo Here -->
-           <a href="../userHomepages/home.html" id="logo">Shashwat <sub>Never stop learning</sub></a>
-        </a>
-        <!-- Add data-toggle and data-target attributes for the button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <form class="form-inline mx-auto d-flex justify-content-center d-lg-inline">
-            <div class="input-group">
-                <input id="searchbar" class="form-control" type="search" placeholder="Search" aria-label="Search">
-               <button type="submit" id="searchbtn"><i class="fa fa-search"></i></button>
-            </div>
-        </form>
-        <div class="dropdown d-none d-lg-block">
-            <a href="#" id="review">Review and Rating</a>
-        </div>
-    </div>
-    </nav>
-</header>
-
-  <header>
-    <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <!-- Add the collapse navbar-collapse class and id -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto w-100">
-                    
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link " data-bs-toggle="offcanvas" data-bs-target="#offCanvasMenu"  href="#" ><i class="fa fa-book"></i> My Book</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><i class="fa fa-list-alt"></i> Category</a>
-                  </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="blog.html"><i class="fa fa-book"></i> Blog</a>
-                  </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-microphone"></i> Podcast</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-headphones"></i> Audio Books</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-graduation-cap"></i> Tutorials</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="offcanvas" 
-                        data-bs-target="#offcanvasRight" 
-                        aria-controls="offcanvasRight"
-                        ><i class="fa fa-user"></i>Profile</a>
-                    </li>
-                    <!-- Add your other menu items here -->
-                </ul>
+    <header class="sticky">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+                <!-- Your Logo Here -->
+               <a href="home.html" id="logo">Shashwat <sub>Never stop learning</sub></a>
+            </a>
+            <!-- Add data-toggle and data-target attributes for the button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="form-inline mx-auto d-flex justify-content-center d-lg-inline">
+                <div class="input-group">
+                    <input id="searchbar" class="form-control" type="search" placeholder="Search" aria-label="Search">
+                   <button type="submit" id="searchbtn"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+            <div class="dropdown d-none d-lg-block">
+                <a href="#" id="review">Review and Rating</a>
             </div>
         </div>
-    </nav>
-</header>
+        </nav>
+    </header>
+    
+      <header>
+        <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <!-- Add the collapse navbar-collapse class and id -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto w-100">
+                        
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../userHomepages/home.html"fa fa-home"></i> Home</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link " data-bs-toggle="offcanvas" data-bs-target="#offCanvasMenu"  href="#" ><i class="fa fa-book"></i> My Book</a>
+                        </li>
+    
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><i class="fa fa-list-alt"></i> Category</a>
+                      </li>
+    
+                        <li class="nav-item">
+                          <a class="nav-link" href="../userHomepages/blog.html"><i class="fa fa-book"></i> Blog</a>
+                      </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="../userHomepages/podcast.html"><i class="fa fa-microphone"></i> Podcast</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="../userHomepages/audiobook.html"><i class="fa fa-headphones"></i>Audio Books</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="../userHomepages/tutorial.html"><i class="fa fa-graduation-cap"></i> Tutorials</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#offcanvasRight" data-bs-toggle="offcanvas" 
+                            data-bs-target="#offcanvasRight" 
+                            aria-controls="offcanvasRight"
+                            ><i class="fa fa-user"></i>Profile</a>
+                        </li>
+                        <!-- Add your other menu items here -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
 
     <!--Slide bar started  -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-    <!-- Indicators/dots -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-    </div>
-    
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/banner.jpg" alt="Los Angeles" class="d-block" style="width:100%">
-        <div class="carousel-caption">
-          <h3>Los Angeles</h3>
-          <p>We had such a great time in LA!</p>
-        </div>
+    <header id="title">
+      <h1>My Blogs</h1>
+  </header>
+  <div class="content">
+      <div class="post">
+          <h2>Post Title 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non neque a felis cursus aliquam. Vivamus euismod augue eu neque scelerisque.</p>
+          <p class="category">Category</p>
+          <p class="date">Published: October 1, 2023</p>
+          <div class="tags">
+              <span class="tag">Delete Blog</span>
+          </div>
       </div>
-      <div class="carousel-item">
-        <img src="img/banner.jpg" alt="Chicago" class="d-block" style="width:100%">
-        <div class="carousel-caption">
-          <h3>Chicago</h3>
-          <p>Thank you, Chicago!</p>
-        </div> 
+      <div class="post">
+          <h2>Post Title 2</h2>
+          <p>Quisque efficitur semper ultrices. Proin facilisis, orci eu auctor auctor, ex purus egestas justo.</p>
+          <p class="category">Category</p>
+          <p class="date">Published: October 5, 2023</p>
+          <div class="tags">
+              <span class="tag">Delete Blog</span>
+          </div>
       </div>
-      <div class="carousel-item">
-        <img src="img/banner.jpg" alt="New York" class="d-block" style="width:100%">
-        <div class="carousel-caption">
-          <h3>New York</h3>
-          <p>We love the Big Apple!</p>
-        </div>  
-      </div>
-    </div>
-    
-    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
   </div>
-    <!--  -->
-    <div class="container">
-        <center><h1>New Books</h1></center>
-        
-        <div class="row">
-          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-              <img class="book" src="img/robinsharma.jpg" class="card-img-top" alt="Book 1">
-              <div class="card-body">
-                <center>
-                  <h5 class="card-title">Book Title 1</h5>
-                <p class="card-text">Author: Author Name 1</p>
-                </center>
-              </div>
-            </div>
-          </div>
-    
-          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-              <img class="book" src="img/robinsharma.jpg" class="card-img-top" alt="Book 2">
-              <div class="card-body">
-                <center>
-                  <h5 class="card-title">Book Title 2</h5>
-                <p class="card-text">Author: Author Name 2</p>
-                </center>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-              <img class="book" src="img/robinsharma.jpg" class="card-img-top" alt="Book 2">
-              <div class="card-body">
-               <center>
-                <h5 class="card-title">Book Title 2</h5>
-                <p class="card-text">Author: Author Name 2</p>
-               </center>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-              <img class="book" src="img/robinsharma.jpg" class="card-img-top" alt="Book 2">
-              <div class="card-body">
-                <center>
-                  <h5 class="card-title">Book Title 2</h5>
-                  <p class="card-text">Author: Author Name 2</p>
-                </center>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-              <img class="book" src="img/robinsharma.jpg" class="card-img-top" alt="Book 2">
-              <div class="card-body">
-              <center>
-                <h5 class="card-title">Book Title 2</h5>
-                <p class="card-text">Author: Author Name 2</p>
-              </center>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-              <img class="book" src="img/robinsharma.jpg" class="card-img-top" alt="Book 2">
-              <div class="card-body">
-               <center>
-                <h5 class="card-title">Book Title 2</h5>
-                <p class="card-text">Author: Author Name 2</p>
-               </center>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-              <img class="book" src="img/robinsharma.jpg" class="card-img-top" alt="Book 2">
-              <div class="card-body">
-                <center>
-                  <h5 class="card-title">Book Title 2</h5>
-                <p class="card-text">Author: Author Name 2</p>
-                </center>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-            <div class="card">
-              <img class="book" src="img/robinsharma.jpg" class="card-img-top" alt="Book 2">
-              <div class="card-body">
-                <center><h5 class="card-title">Book Title 2</h5>
-                  <p class="card-text">Author: Author Name 2</p></center>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    
-
-
-  <!-- Top rated books -->
-  <div class="container">
-    <center><h1>Top Rated Books</h1></center>
-    
-    <div class="row">
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-        <div class="card">
-          <img class="book" src="img/robinsharma.jpg" class="card-img-top" alt="Book 1">
-          <div class="card-body">
-           <center> <h5 class="card-title">Book Title 1</h5>
-            <p class="card-text">Author: Author Name 1</p></center>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-        <div class="card">
-          <img class="book" src="img/robinsharma.jpg" class="card-img-top" alt="Book 2">
-          <div class="card-body">
-            <center>
-              <h5 class="card-title">Book Title 2</h5>
-            <p class="card-text">Author: Author Name 2</p>
-            </center>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-        <div class="card">
-          <img class="book" src="img/robinsharma.jpg" class="card-img-top" alt="Book 2">
-          <div class="card-body">
-           <center> <h5 class="card-title">Book Title 2</h5>
-            <p class="card-text">Author: Author Name 2</p></center>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-        <div class="card">
-          <img class="book" src="img/robinsharma.jpg" class="card-img-top" alt="Book 2">
-          <div class="card-body">
-            <center>
-              <h5 class="card-title">Book Title 2</h5>
-            <p class="card-text">Author: Author Name 2</p>
-            </center>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-        <div class="card">
-          <img class="book" src="img/robinsharma.jpg" class="card-img-top" alt="Book 2">
-          <div class="card-body">
-           <center>
-            <h5 class="card-title">Book Title 2</h5>
-            <p class="card-text">Author: Author Name 2</p>
-           </center>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-        <div class="card">
-          <img class="book" src="img/robinsharma.jpg" class="card-img-top" alt="Book 2">
-          <div class="card-body">
-           <center>
-            <h5 class="card-title">Book Title 2</h5>
-            <p class="card-text">Author: Author Name 2</p>
-           </center>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-        <div class="card">
-          <img class="book" src="img/robinsharma.jpg" class="card-img-top" alt="Book 2">
-          <div class="card-body">
-            <center>
-              <h5 class="card-title">Book Title 2</h5>
-            <p class="card-text">Author: Author Name 2</p>
-            </center>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-        <div class="card">
-          <img class="book" src="img/robinsharma.jpg" class="card-img-top" alt="Book 2">
-          <div class="card-body">
-            <center>
-              <h5 class="card-title">Book Title 2</h5>
-            <p class="card-text">Author: Author Name 2</p>
-            </center>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <section>
-
-<!-- Carousel wrapper -->
-<div
-  id="carouselMultiItemExample"
-  class="carousel slide carousel-dark text-center"
-  data-mdb-ride="carousel"
->
-  <!-- Controls -->
-  <div class="d-flex justify-content-center mb-4">
-    <button
-      class="carousel-control-prev position-relative"
-      type="button"
-      data-mdb-target="#carouselMultiItemExample"
-      data-mdb-slide="prev"
-    >
-    
-    </button>
-    <button
-      class="carousel-control-next position-relative"
-      type="button"
-      data-mdb-target="#carouselMultiItemExample"
-      data-mdb-slide="next"
-    >
-    
-  </div>
-  <!-- Inner -->
-  <div class="carousel-inner py-4">
-    <!-- Single item -->
-    <div class="carousel-item active">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card">
-              <img
-                src="img/blog1.jpeg"
-                class="card-img-top"
-                alt="Waterfall"
-                height="200px"
-                width="200px"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" class="btn btn-primary">Read</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <div class="card">
-              <img
-                src="img/blog2.jpg"
-                class="card-img-top"
-                alt="Sunset Over the Sea"
-                height="200px"
-                width="200px"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" class="btn btn-primary">Read</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <div class="card">
-              <img
-                src="img/blog4.jpg"
-                class="card-img-top"
-                alt="Sunset over the Sea"
-                height="200px"
-                width="200px"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" class="btn btn-primary">Read</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-<!-- Carousel wrapper -->
-
-  </section>
 
   <footer class="bg-dark text-light">
     <div class="container">
@@ -503,9 +179,9 @@
             </div> 
             <center>
               <div class="offcanvas-body"> 
-                <h5><a href="myprofile/myprofile.html">My Profile</a></h5> 
-                <h5><a href="myprofile/setting.html">Setting</a></h5> 
-                <h5><a href="">My Blogs</a></h5> 
+                <h5><a href="myprofile.html">My Profile</a></h5> 
+                <h5><a href="setting.html">Setting</a></h5> 
+                <h5><a href="myblog.html">My Blogs</a></h5> 
             </div>
             </center> 
         </div> 
