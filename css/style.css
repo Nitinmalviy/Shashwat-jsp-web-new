@@ -1,5 +1,18 @@
 
 /* Add styles to make the header sticky */
+body
+{
+    background: #FFF6F6;
+}
+.custom-navbar 
+{
+    background: #FFF6F6;
+}
+.navbgcolor
+{
+    
+    background: #FFF6F6;
+}
 .sticky {
     position: sticky;
     top: 0;
@@ -60,6 +73,8 @@
 #searchbar
 {
     border: 2px solid gold;
+    margin-left: -25%;
+   
 }
 #searchbar::placeholder
 {
@@ -67,7 +82,7 @@
 }
 #searchbtn
 {
-    background-color:transparent;
+    background-color: #ffff;
     border: 2px gold solid;
     /* border-style: none; */
     padding-left: 5px;
@@ -87,6 +102,8 @@
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 12px;
+    color:      #272727;
+    ;
 }
 #review
 {
@@ -103,13 +120,17 @@ nav
 }
 #menu div div ul li a 
 {
+
     padding-left: 20px;
     font-weight: 600;
     font-size: 20px;
     color: #272727;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+#menu div div ul li a:hover
+{
+    color:#FF5733;
+}
 
 #loginform button
 {
@@ -117,3 +138,8 @@ nav
 }
 
 /* nav bar styeling enddd */
+/* foter styleing */
+.bgfooter{
+
+    background: #445D48;
+}
