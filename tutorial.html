@@ -17,7 +17,7 @@
 </head>
 <body>
     <header class="sticky">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar ">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <!-- Your Logo Here -->
@@ -41,12 +41,12 @@
     </header>
     
       <header>
-        <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav id="menu" class="navbar navbar-expand-lg navbar-light navbgcolor">
             <div class="container">
                 <!-- Add the collapse navbar-collapse class and id -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto w-100">
-                    
+                        
                         <li class="nav-item active">
                             <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
                         </li>
@@ -55,8 +55,21 @@
                             <a class="nav-link"  href="#loginmodal" data-toggle="modal" data-target="#loginmodal" ><i class="fa fa-book"></i> My Book</a>
                         </li>
     
-                        <li class="nav-item">
-                          <a class="nav-link" href="category.html"><i class="fa fa-list-alt"></i> Category</a>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-list-alt"></i> Category
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="../category/novel.html">Novel</a>
+                              <a class="dropdown-item" href="../category/Sciencefiction.html">Science fiction</a>
+                              <a class="dropdown-item" href="../category/Mystery.html">Mystery</a>
+                              <a class="dropdown-item" href="../category/Thriller.html">Thriller</a>
+                              <a class="dropdown-item" href="../category/adventure.html">Adventure</a>
+                              <a class="dropdown-item" href="../category/Selfhelp.html">Self-help</a>
+                              <a class="dropdown-item" href="../category/horror.html">Horror</a>
+                              <a class="dropdown-item" href="../category/Textbooks.html">Text-Books</a>
+                              <!-- call servlet for logout user -->
+                          </div>
                       </li>
     
                         <li class="nav-item">
@@ -84,22 +97,6 @@
             </div>
         </nav>
     </header>
-
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offCanvasMenu">
-  <div class="offcanvas-header">
-      <h5 class="offcanvas-title">Menu</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-      <!-- Your menu content goes here -->
-      <ul class="list-group">
-          <li class="list-group-item">Item 1</li>
-          <li class="list-group-item">Item 2</li>
-          <li class="list-group-item">Item 3</li>
-      </ul>
-  </div>
-</div>
-
 <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- page body  -->
 

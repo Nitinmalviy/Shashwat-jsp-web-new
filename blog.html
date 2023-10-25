@@ -13,11 +13,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blohg.css">
     <title>blog</title>
 </head>
 <body>
     <header class="sticky">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar ">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <!-- Your Logo Here -->
@@ -41,68 +42,293 @@
     </header>
     
       <header>
-        <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav id="menu" class="navbar navbar-expand-lg navbar-light navbgcolor">
             <div class="container">
                 <!-- Add the collapse navbar-collapse class and id -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto w-100">
-                        <ul class="navbar-nav ml-auto w-100">
-                    
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a class="nav-link"  href="#loginmodal" data-toggle="modal" data-target="#loginmodal" ><i class="fa fa-book"></i> My Book</a>
-                            </li>
-        
-                            <li class="nav-item">
-                              <a class="nav-link" href="category.html"><i class="fa fa-list-alt"></i> Category</a>
-                          </li>
-        
-                            <li class="nav-item">
-                              <a class="nav-link" href="blog.html"><i class="fa fa-book"></i> Blog</a>
-                          </li>
-        
-                            <li class="nav-item">
-                                <a class="nav-link" href="podcast.html"><i class="fa fa-microphone"></i> Podcast</a>
-                            </li>
-        
-                            <li class="nav-item">
-                                <a class="nav-link" href="audiobook.html"><i class="fa fa-headphones"></i> Audio Books</a>
-                            </li>
-        
-                            <li class="nav-item">
-                                <a class="nav-link" href="tutorial.html"><i class="fa fa-graduation-cap"></i> Tutorials</a>
-                            </li>
-        
-                            <li class="nav-item">
-                                <a class="nav-link" href="#loginmodal" data-toggle="modal" data-target="#loginmodal"><i class="fa fa-user"></i>Login</a>
-                            </li>
-                            <!-- Add your other menu items here -->
-                        </ul> 
+                        
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#loginmodal" data-toggle="modal" data-target="#loginmodal" ><i class="fa fa-book"></i> My Book</a>
+                        </li>
+    
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-list-alt"></i> Category
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="../category/novel.html">Novel</a>
+                              <a class="dropdown-item" href="../category/Sciencefiction.html">Science fiction</a>
+                              <a class="dropdown-item" href="../category/Mystery.html">Mystery</a>
+                              <a class="dropdown-item" href="../category/Thriller.html">Thriller</a>
+                              <a class="dropdown-item" href="../category/adventure.html">Adventure</a>
+                              <a class="dropdown-item" href="../category/Selfhelp.html">Self-help</a>
+                              <a class="dropdown-item" href="../category/horror.html">Horror</a>
+                              <a class="dropdown-item" href="../category/Textbooks.html">Text-Books</a>
+                              <!-- call servlet for logout user -->
+                          </div>
+                      </li>
+    
+                        <li class="nav-item">
+                          <a class="nav-link" href="blog.html"><i class="fa fa-book"></i> Blog</a>
+                      </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="podcast.html"><i class="fa fa-microphone"></i> Podcast</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="audiobook.html"><i class="fa fa-headphones"></i> Audio Books</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="tutorial.html"><i class="fa fa-graduation-cap"></i> Tutorials</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#loginmodal" data-toggle="modal" data-target="#loginmodal"><i class="fa fa-user"></i>Login</a>
+                        </li>
+                        <!-- Add your other menu items here -->
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
-
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offCanvasMenu">
-  <div class="offcanvas-header">
-      <h5 class="offcanvas-title">Menu</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-      <!-- Your menu content goes here -->
-      <ul class="list-group">
-          <li class="list-group-item">Item 1</li>
-          <li class="list-group-item">Item 2</li>
-          <li class="list-group-item">Item 3</li>
-      </ul>
-  </div>
-</div>
+    
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- page body  -->
+
+<center>
+    <div id="main-Div">
+        <section class="dark">
+            <div class="container py-4">
+                <h1 class="h1 text-center" id="pageHeaderTitle">Today Blog</h1>
+                  <hr> <br><br>     
+                <article class="postcard dark blue">
+                    <a class="postcard__img_link" href="#">
+                        <img class="postcard__img" src="https://picsum.photos/1000/1000" alt="Image Title" />
+                    </a>
+
+                    <div class="postcard__text">
+                        <h1 class="postcard__title blue"><a href="#">Blog Title</a></h1>
+                        <div class="postcard__subtitle small">
+                            <time datetime="2020-05-25 12:00:00">
+                                <i class="fas fa-calendar-alt mr-2"></i>Sub heading
+                            </time>
+                        </div>
+
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia,
+                            doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis
+                            molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla
+                            unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                           
+                        <ul class="postcard__tagbox">
+                           
+                            <li class="tag__item">Create Blog &nbsp;<i class="fa fa-plus-circle" aria-hidden="true"></i></li>
+                            <li class="tag__item play blue">
+                            <a href="#">Read &nbsp;<i class="fa fa-th-large" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="postcard dark red">
+                    <a class="postcard__img_link" href="#">
+                        <img class="postcard__img" src="https://picsum.photos/501/500" alt="Image Title" />
+                    </a>
+                    <div class="postcard__text">
+                        <h1 class="postcard__title red"><a href="#">Blog Title</a></h1>
+                        <div class="postcard__subtitle small">
+                            <time datetime="2023-10-13 12:00:00">
+                               Sub Heading
+                            </time>
+                        </div>
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia,
+                            doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis
+                            molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla
+                            unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                        <ul class="postcard__tagbox">
+                            <li class="tag__item">Create Blog &nbsp;<i class="fa fa-plus-circle" aria-hidden="true"></i></li>
+                            <li class="tag__item play blue">
+                            <a href="#">Read &nbsp;<i class="fa fa-th-large" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="postcard dark green">
+                    <a class="postcard__img_link" href="#">
+                        <img class="postcard__img" src="https://picsum.photos/500/501" alt="Image Title" />
+                    </a>
+                    <div class="postcard__text">
+                        <h1 class="postcard__title green"><a href="#">Blog Title</a></h1>
+                        <div class="postcard__subtitle small">
+                            <time datetime="2020-05-25 12:00:00">
+                                <li class="tag__item"><i class="fas fa-clock mr-2"></i>Sub Title</li>
+                                <i class="fas fa-calendar-alt mr-2"></i>
+                            </time>
+                        </div>
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia,
+                            doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis
+                            molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla
+                            unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                        <ul class="postcard__tagbox">
+                            <li class="tag__item">Create Blog &nbsp;<i class="fa fa-plus-circle" aria-hidden="true"></i></li>
+                            <li class="tag__item play blue">
+                            <a href="#">Read &nbsp;<i class="fa fa-th-large" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="postcard dark yellow">
+                    <a class="postcard__img_link" href="#">
+                        <img class="postcard__img" src="https://picsum.photos/501/501" alt="Image Title" />
+                    </a>
+                    <div class="postcard__text">
+                        <h1 class="postcard__title yellow"><a href="#">Blog Title</a></h1>
+                        <div class="postcard__subtitle small">
+                            <time datetime="2020-05-25 12:00:00">
+                                <i class="fas fa-calendar-alt mr-2"></i>Sub Title
+                            </time>
+                        </div>
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia,
+                            doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis
+                            molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla
+                            unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                        <ul class="postcard__tagbox">
+                            <li class="tag__item">Create Blog &nbsp;<i class="fa fa-plus-circle" aria-hidden="true"></i></li>
+                            <li class="tag__item play blue">
+                            <a href="#">Read &nbsp;<i class="fa fa-th-large" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="light">
+            <div class="container py-2">
+                <div class="h1 text-center text-dark" id="pageHeaderTitle">Other Blog</div>
+                    <hr><br><br>
+                <article class="postcard light blue">
+                    <a class="postcard__img_link" href="#">
+                        <img class="postcard__img" src="https://picsum.photos/1000/1000" alt="Image Title" />
+                    </a>
+                    <div class="postcard__text t-dark">
+                        <h1 class="postcard__title blue"><a href="#">Blog Title</a></h1>
+                        <div class="postcard__subtitle small">
+                            <time datetime="2020-05-25 12:00:00">
+                                <i class="fas fa-calendar-alt mr-2"></i>Sub Title
+                            </time>
+                        </div>
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia,
+                            doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis
+                            molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla
+                            unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                        <ul class="postcard__tagbox">
+                            <li class="tag__item">Create Blog &nbsp;<i class="fa fa-plus-circle" aria-hidden="true"></i></li>
+                            <li class="tag__item play blue">
+                            <a href="#">Read &nbsp;<i class="fa fa-th-large" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+
+                <article class="postcard light red">
+                    <a class="postcard__img_link" href="#">
+                        <img class="postcard__img" src="https://picsum.photos/501/500" alt="Image Title" />
+                    </a>
+                    <div class="postcard__text t-dark">
+                        <h1 class="postcard__title red"><a href="#">Blog Title</a></h1>
+                        <div class="postcard__subtitle small">
+                            <time datetime="2020-05-25 12:00:00">
+                                <i class="fas fa-calendar-alt mr-2"></i>Sub Title
+                            </time>
+                        </div>
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia,
+                            doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis
+                            molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla
+                            unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                        <ul class="postcard__tagbox">
+                            <li class="tag__item">Create Blog &nbsp;<i class="fa fa-plus-circle" aria-hidden="true"></i></li>
+                            <li class="tag__item play blue">
+                            <a href="#">Read &nbsp;<i class="fa fa-th-large" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="postcard light green">
+                    <a class="postcard__img_link" href="#">
+                        <img class="postcard__img" src="https://picsum.photos/500/501" alt="Image Title" />
+                    </a>
+                    <div class="postcard__text t-dark">
+                        <h1 class="postcard__title green"><a href="#">Blog Title</a></h1>
+                        <div class="postcard__subtitle small">
+                            <time datetime="2020-05-25 12:00:00">
+                                <i class="fas fa-calendar-alt mr-2"></i>Sub Title
+                            </time>
+                        </div>
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia,
+                            doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis
+                            molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla
+                            unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                        <ul class="postcard__tagbox">
+                            <li class="tag__item">Create Blog &nbsp;<i class="fa fa-plus-circle" aria-hidden="true"></i></li>
+                            <li class="tag__item play blue">
+                            <a href="#">Read &nbsp;<i class="fa fa-th-large" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+
+                <article class="postcard light yellow">
+                    <a class="postcard__img_link" href="#">
+                        <img class="postcard__img" src="https://picsum.photos/501/501" alt="Image Title" />
+                    </a>
+                    <div class="postcard__text t-dark">
+                        <h1 class="postcard__title yellow"><a href="#">Blog Title</a></h1>
+                        <div class="postcard__subtitle small">
+                            <time datetime="2020-05-25 12:00:00">
+                                <i class="fas fa-calendar-alt mr-2"></i>Sub Title
+                            </time>
+                        </div>
+                        <div class="postcard__bar"></div>
+                        <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia,
+                            doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis
+                            molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla
+                            unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                        <ul class="postcard__tagbox">
+                            <li class="tag__item">Create Blog &nbsp;<i class="fa fa-plus-circle" aria-hidden="true"></i></li>
+                            <li class="tag__item play blue">
+                            <a href="#">Read &nbsp;<i class="fa fa-th-large" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+</center>
 
 
 
