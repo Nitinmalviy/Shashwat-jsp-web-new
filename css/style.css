@@ -26,8 +26,8 @@ body
 .book
 {
     margin-top: 10px;
-    height: 230px;
-    width: 150px;
+    height: 180px;
+    width: 120px;
 
 }
 .card
@@ -146,12 +146,12 @@ nav
 /* bookscatlog styele start----------------------------*/
 
 
-.card
-{
-    background-color: #da9494;
-}
  span 
 {
     color: white;
 }
 /* book catlg end-------------------- */
+.fa-ellipsis-v
+{
+    margin-left: 1800%;
+}
